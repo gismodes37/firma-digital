@@ -1,5 +1,13 @@
 # ✒️ Herramienta de Confirmación y Firma (v1.0)
 
+<p align="left">
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+</p>
+
 ![Captura de Pantalla de la Herramienta](./screenshot.png)
 
 Esta es una herramienta autónoma, modular y de diseño premium diseñada para capturar firmas digitales de clientes de forma sencilla y elegante. Fue extraída originalmente del ecosistema **PCSupport-STG** para ser utilizada como un componente "Plug & Play" en cualquier proyecto web.
