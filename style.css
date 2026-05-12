@@ -29,6 +29,33 @@ body {
         radial-gradient(circle at 90% 90%, rgba(14, 165, 233, 0.05) 0%, transparent 40%);
 }
 
+/* Identificador de Autor */
+.author-badge {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--brand-teal);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    animation: fadeInAuthor 1s ease-out;
+    z-index: 10;
+}
+
+.author-badge i {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes fadeInAuthor {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 0.8; transform: translateX(0); }
+}
+
 .confirm-container {
     width: 100%;
     max-width: 500px;
