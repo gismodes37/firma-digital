@@ -1,0 +1,28 @@
+# Archivos de Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node (por si se agrega algún build futuro)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos temporales y cachés
+.sass-cache/
+.eslintcache
+
+# Entornos Virtuales (por si se combina con Python a futuro)
+venv/
+.env
+
+# Logs
+*.log

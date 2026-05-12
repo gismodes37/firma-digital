@@ -1,0 +1,18 @@
+# Configuración de Docker Compose para entorno de pruebas
+# Se exponen los puertos 3004 y 9004 hacia el puerto 80 del contenedor Nginx
+# Puertos verificados previamente para asegurar que no hay conflictos.
+version: '3.8'
+
+services:
+  signature-tool:
+    image: nginx:alpine
+    container_name: stg-confirm-tool
+    ports:
+      # Mapeo del puerto 3004 externo al 80 interno
+      - "3004:80"
+      # Mapeo del puerto 9004 externo al 80 interno
+      - "9004:80"
+    volumes:
+      # Se monta el directorio actual en la ruta de html de Nginx para servir los archivos
+      - ./:/usr/share/nginx/html
+    restart: unless-stopped

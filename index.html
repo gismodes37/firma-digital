@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación y Firma | PCSupport</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes de Google: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Íconos de Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="confirm-container">
+        <div class="glass-card">
+            <header>
+                <div class="brand">
+                    <div class="logo-dot"></div>
+                    <h1>Confirmación y Firma</h1>
+                </div>
+                <p class="subtitle">Por favor, revise los detalles y firme a continuación para proceder.</p>
+            </header>
+
+            <div class="signature-wrapper">
+                <div class="signature-header">
+                    <span class="label">Firma del Cliente</span>
+                    <div class="actions">
+                        <button id="clear-btn" title="Limpiar Firma">
+                            <i data-lucide="trash-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="canvas-container">
+                    <canvas id="signature-pad"></canvas>
+                    <div class="placeholder">Firmar aquí</div>
+                </div>
+            </div>
+
+            <div class="terms">
+                <i data-lucide="shield-check"></i>
+                <p>Al firmar, acepto que el diagnóstico y los costos presentados son correctos y autorizo la ejecución del servicio.</p>
+            </div>
+
+            <footer>
+                <button id="confirm-btn" class="primary-btn">
+                    <i data-lucide="check-circle-2"></i>
+                    Confirmar y Finalizar
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Librería del Panel de Firma -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
